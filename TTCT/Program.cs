@@ -43,11 +43,11 @@ namespace TTCT
                         ignoreCase = true;
                         break;
 
-                    case "--use-stemmer":
+                    case "--stemmer":
                         useStemmer = true;
                         break;
                     
-                    case "--help-me":
+                    case "--help":
                         printHelp();
                         return false;
                     
@@ -91,9 +91,11 @@ namespace TTCT
             Console.WriteLine("Arguments:");
             Console.WriteLine("    if=<path>        The input folder/file.");
             Console.WriteLine("    cf=<path>        The comparison folder/file.");
-            Console.WriteLine("    --ignore case    Ignores upper/lower case when comparing files.");
-            Console.WriteLine("    --use-stemmer    Uses the porter stemmer when comparing files (forces --ignore-case).");
-            Console.WriteLine("    --help-me        Displays this page.");
+            Console.WriteLine();
+            Console.WriteLine("Optional:");
+            Console.WriteLine("    --ignore-case    Ignores upper/lower case when comparing files.");
+            Console.WriteLine("    --stemmer        Uses the porter stemmer when comparing files (forces --ignore-case).");
+            Console.WriteLine("    --help           Displays this page.");
             Console.WriteLine();
             Console.WriteLine("Examples:");
             Console.WriteLine("    TTT if=~/Downloads cf=../../myFolder");
