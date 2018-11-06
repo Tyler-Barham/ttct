@@ -40,4 +40,22 @@ $ dotnet build
 $ dotnet test
 ```
 
+### Code coverage
+Testing with code coverage is done through the coverlet NuGet package and only requires an additional flag to the regular test command.
+```
+$ pwd
+/TTCT/TTCTUnitTest
+
+$ dotnet build
+$ dotnet test /p:CollectCoverage=true
+
+// A snipet from the output
++--------+--------+--------+--------+
+| Module | Line   | Branch | Method |
++--------+--------+--------+--------+
+| TTCT   | 28%    | 7.7%   | 41.3%  |
++--------+--------+--------+--------+
+
+```
+
 ___
