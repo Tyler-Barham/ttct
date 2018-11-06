@@ -98,9 +98,9 @@ namespace TTCT
             Console.WriteLine("    --help           Displays this page.");
             Console.WriteLine();
             Console.WriteLine("Examples:");
-            Console.WriteLine("    TTT if=~/Downloads cf=../../myFolder");
-            Console.WriteLine("    TTT if=./myFolder cf=./myFolder/subFolder --use-stemmer");
-            Console.WriteLine("    TTT --help-me");
+            Console.WriteLine("    TTCT if=~/Downloads cf=../../myFolder");
+            Console.WriteLine("    TTCT if=./myFolder cf=./myFolder/subFolder --use-stemmer");
+            Console.WriteLine("    TTCT --help");
             Console.WriteLine();
         }
     }
