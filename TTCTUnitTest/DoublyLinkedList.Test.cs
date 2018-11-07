@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TTCT;
+using System;
 
 namespace TTCTUnitTest
 {
@@ -29,7 +30,7 @@ namespace TTCTUnitTest
 
             for(int i = curr_size; i < amount + curr_size; i++)
             {
-                _dll.pushTail(i.ToString());
+                _dll.pushTail(Guid.NewGuid().ToString("n"));
             }
         }
 
