@@ -119,12 +119,16 @@ namespace TTCTUnitTest
 
             //Get dll size
             int dllSize = _dll.size();
+            //Get dll terms
+            string allTerms = _dll.getAllTerms();
 
             //Try remove the bad term
             _dll.remove(badTerm);
 
             //Assert size hasn't changed
             Assert.AreEqual(dllSize, _dll.size());
+            //Assert that the terms are still the same
+            Assert.AreEqual(allTerms, _dll.getAllTerms());
         }
 
         [TestMethod]
