@@ -99,7 +99,7 @@ namespace TTCT
             Console.WriteLine();
             Console.WriteLine("Examples:");
             Console.WriteLine("    TTCT if=~/Downloads cf=../../myFolder");
-            Console.WriteLine("    TTCT if=./myFolder cf=./myFolder/subFolder --use-stemmer");
+            Console.WriteLine("    TTCT if=./myFolder cf=./myFolder/subFolder --stemmer");
             Console.WriteLine("    TTCT --help");
             Console.WriteLine();
         }
